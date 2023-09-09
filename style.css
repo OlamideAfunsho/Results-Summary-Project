@@ -1,0 +1,238 @@
+*{
+     margin:0;
+     padding:0;
+}
+html{
+     font-family:'Hanken Grotesk';
+     font-weight: 500;
+}
+
+.container{
+     display:grid;
+     grid-template-columns: 368px 368px;
+     border-radius: 30px;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     width:736px;
+     height:512px;
+     box-shadow: 0px 0px 30px #b8b1b1;
+}
+
+
+/* --------------COLUMN-1----------------- */
+.col-1{
+     background-image: linear-gradient(to bottom, hsl(252, 98%, 64%), hsl(241, 81%, 54%) );
+     color:hsl(0, 0%, 100%);
+     border-radius: 30px;
+     text-align:center;
+}
+/* -------------ANIMATION--------------- */
+
+
+
+
+
+.heading{
+     width:60%;
+     margin:2.5rem auto;
+     font-size: 25px;
+     font-weight: 500;
+     
+}
+.score{
+     background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+     width:40%;
+     padding:3rem 1.5rem;
+     border-radius: 50%;
+     margin: 1.5rem auto;
+}
+.scr{
+     font-size: 70px;
+     font-weight: 800;
+}
+
+.light{
+     opacity:0.7;
+}
+
+.scnd-heading{
+     font-size:30px;
+     font-weight: 700;
+}
+
+.score-text{
+     width:70%;
+
+     margin:10px auto;
+     font-size: 18px;
+     line-height: 25px;
+}
+
+
+
+
+/* -----------------COLUMN-2------------------- */
+.col-2{
+     color:hsla(224, 84%, 15%, 0.9);
+     font-size: 20px;
+}
+
+
+.summary{
+     width:75%;
+     /* margin:40px auto 20px auto; */
+     margin-top:2.5rem;
+     margin-bottom:20px;
+     margin-left:auto;
+     margin-right:auto;
+     font-size: 25px;
+     font-weight: 600;
+}
+.stats{
+     display: flex;
+     padding: 15px 10px;
+     width:75%;
+     margin:20px auto;
+     border-radius: 10px;
+     font-weight: 700;
+     
+}
+
+.sts-1{
+     background-color:hsl(0, 61%, 95%);
+}
+.sts-2{
+     background-color: hsl(39, 100%, 95%);
+}
+.sts-3{
+     background-color: hsl(166, 100%, 95%);
+}
+.sts-4{
+     background-color: hsl(234, 85%, 95%);
+}
+
+
+
+
+.stats-1{
+     color:hsl(0, 100%, 67%);
+     margin-left: 10px;
+     font-weight:400;
+}
+.stats-2{
+     color:hsl(39, 100%, 56%);
+     margin-left: 10px;
+     font-weight:400;
+}
+.stats-3{
+     color:hsl(166, 100%, 37%);
+     margin-left: 10px;
+     font-weight:400;
+}
+.stats-4{
+     color:hsl(234, 85%, 45%);
+     margin-left: 10px;
+     font-weight:400;
+}
+
+
+.mark{
+     position:absolute;
+     left:85%;
+}
+.total{
+     color:hsla(224, 84%, 15%, 0.3);
+}
+
+.btn-full{
+     display: flex;
+     text-decoration: none;
+     background-color:hsla(224, 84%, 15%, 0.85);
+     color:hsl(0, 0%, 100%);
+     width:80%;
+     font-size: 18px;
+     font-weight: 400;
+     margin:30px auto;
+     border-radius: 30px;
+     padding:15px 0;
+     justify-content: center;
+     
+     
+     
+     
+}
+.btn-full:hover{
+     transition: background-color ease 1s;
+     background-image: linear-gradient(to bottom, hsl(252, 98%, 64%), hsl(241, 81%, 54%) );
+     
+}
+
+/* -----------------RESPONSIVE------------------ */
+@media screen and (max-width: 768px){
+     .container{
+          display:block;
+          max-width:100%;
+          height:1200px;
+          border-top-left-radius: 0%;
+          border-top-right-radius: 0%;
+          border-bottom-left-radius: 0%;
+          border-bottom-right-radius: 0%;
+          
+     }
+     .col-1{
+          padding-top:50%;
+          height:70vh;
+     }
+     .heading{
+          margin-top:-1rem;
+     }
+     .score{
+          width:30%;
+     }
+     .col-2{
+          border-bottom-left-radius: 0%;
+          border-bottom-right-radius: 0%;
+     }
+     .stats{
+          padding:10px 10px;
+          margin:5;
+     }
+     .mark{
+          left:70%;
+     }
+}
+@media screen and (max-width: 500px){
+     .col-1{
+          height: 80vh;
+     }
+     .heading{
+          margin-top:3rem;
+     }
+
+
+}
+@media screen and (max-width: 450px){
+     .col-1{
+          height:50vh;
+     }
+     .heading{
+          margin-top: -1rem;
+     }
+     .score{
+          padding:50px 40px;
+     }
+
+     .stats{
+          padding:20px 20px;
+          border-radius: 15px;
+     }
+     .btn-full{
+          padding:20px 20px;
+          margin-top:30px;
+     }
+}
+
+
+
