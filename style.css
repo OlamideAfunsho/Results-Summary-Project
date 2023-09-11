@@ -189,15 +189,20 @@ html{
           top:50%;
           left:50%;
           transform: translate(-50%,-65%);
+          
      }
      .col{
           height: 500px;
           border-top-left-radius: 0;
-           border-top-right-radius: 0;    
+           border-top-right-radius: 0;
+          
      }
+     
      .col-2{
           border-radius: 0%;
           height: 500px;
-     }     
-}
+     }
+     
 
+     
+}
